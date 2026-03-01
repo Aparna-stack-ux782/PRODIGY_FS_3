@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🛍️ EcommHub - Local Store E-commerce Platform
 
 A complete full-stack e-commerce application for local stores to enable customers to browse and purchase products online.
@@ -25,10 +26,31 @@ EcommHub is a modern e-commerce platform built with React/Next.js frontend and N
 ## Tech Stack
 
 ### Frontend
+=======
+# 🛍️ EcommHub - E-commerce Frontend
+
+A modern React/Next.js frontend for the EcommHub e-commerce platform.
+
+## Features
+
+- 🏠 Home page with featured products
+- 📦 Product catalog with filtering and sorting
+- 🔍 Product search and details page
+- 🛒 Shopping cart functionality
+- 👤 User authentication (login/register)
+- 📋 User profile management
+- 📑 Order tracking
+- ⭐ Product reviews and ratings
+- 📱 Responsive design
+
+## Tech Stack
+
+>>>>>>> f077fb8bc7220c7ea00a7938218f388928dc7ef6
 - React 18
 - Next.js 14
 - Zustand (state management)
 - Axios (HTTP client)
+<<<<<<< HEAD
 - CSS Modules
 
 ### Backend
@@ -111,10 +133,28 @@ NODE_ENV=development
 ```
 
 ### Frontend (.env.local)
+=======
+- CSS Modules for styling
+
+## Installation
+
+1. Clone the repository:
+```bash
+cd frontend
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Create `.env.local` file:
+>>>>>>> f077fb8bc7220c7ea00a7938218f388928dc7ef6
 ```
 NEXT_PUBLIC_API_URL=http://localhost:5000/api
 ```
 
+<<<<<<< HEAD
 ## Usage
 
 1. **Register**: Create a new account on `/register`
@@ -197,11 +237,69 @@ NEXT_PUBLIC_API_URL=http://localhost:5000/api
 ## Support
 
 For issues or questions, please refer to the individual README files in the frontend and backend directories.
+=======
+4. Run the development server:
+```bash
+npm run dev
+```
+
+The frontend will be available at `http://localhost:3000`
+
+## Project Structure
+
+```
+frontend/
+├── pages/           # Next.js pages
+├── components/      # Reusable React components
+├── styles/          # CSS modules
+├── lib/             # Utilities and API services
+├── store.js         # Zustand store
+└── package.json
+```
+
+## Pages
+
+- `/` - Home page
+- `/products` - Product catalog
+- `/product/[id]` - Product details
+- `/cart` - Shopping cart
+- `/login` - User login
+- `/register` - User registration
+- `/profile` - User profile
+- `/orders` - Order history
+
+## Components
+
+- `Header` - Navigation header
+- `Footer` - Footer section
+- `ProductCard` - Product card component
+
+## State Management
+
+The app uses Zustand for global state management. Store includes:
+- User data
+- Authentication token
+- Shopping cart items
+
+## API Integration
+
+The app connects to the backend API at `http://localhost:5000/api`. Make sure the backend is running before starting the frontend.
+
+## Building for Production
+
+```bash
+npm run build
+npm start
+```
+>>>>>>> f077fb8bc7220c7ea00a7938218f388928dc7ef6
 
 ## License
 
 MIT
+<<<<<<< HEAD
 
 ## Author
 
 Aparna's E-commerce Platform
+=======
+>>>>>>> f077fb8bc7220c7ea00a7938218f388928dc7ef6

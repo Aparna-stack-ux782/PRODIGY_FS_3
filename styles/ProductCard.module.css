@@ -1,0 +1,91 @@
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding: 16px;
+}
+
+.name {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.category {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priceRating {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.price {
+  font-weight: bold;
+  color: #667eea;
+  font-size: 16px;
+}
+
+.rating {
+  font-size: 14px;
+  color: #ff9800;
+}
+
+.viewBtn {
+  background: #667eea;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.viewBtn:hover {
+  background: #764ba2;
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    height: 150px;
+  }
+}
