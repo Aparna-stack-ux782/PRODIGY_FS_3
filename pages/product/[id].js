@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import useStore from '../store';
-import { productAPI, cartAPI, reviewAPI } from '../lib/services';
-import styles from '../styles/ProductDetail.module.css';
 
+import useStore from '../../src/store';
+import { productAPI, cartAPI, reviewAPI } from '../../src/lib/services';
+import styles from '../../styles/ProductDetail.module.css';
 export default function ProductDetail() {
   const router = useRouter();
   const { id } = router.query;
